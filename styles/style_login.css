@@ -1,0 +1,12 @@
+#banniere {
+    display: block;
+    height: 250px;
+    text-align: center;
+    width: 100%;
+}
+
+form {
+    width: 400px;
+    display: block;
+    margin: auto;
+}

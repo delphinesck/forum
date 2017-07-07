@@ -1,0 +1,9 @@
+main {
+    width: 800px;
+    padding-top: 100px;
+    margin: auto;
+}
+
+.panel-border {
+    border-bottom: 1px solid lightgrey;
+}
