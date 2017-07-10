@@ -12,8 +12,7 @@
 
     <div id="banniere"><h1>Bienvenue !<h1></div>
     <!-- Alfonso: il te faut la lisgne suivante -->
-    <!--<form method="post" action="services/loginServices.php">-->
-    <form>
+    <form method="post" action="services/loginServices.php">
         <h3>Se connecter</h3>
 
         <div class="form-group">

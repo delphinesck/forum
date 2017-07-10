@@ -12,8 +12,7 @@
 
     <div id="banniere"><h1>Bienvenue !<h1></div>
 
-    <!--<form method="post" action="services/signupServices.php">-->
-    <form>
+    <form method="post" action="services/signupServices.php">
         <h3>S'inscrire</h3>
 
         <div class="form-group">
@@ -34,8 +33,8 @@
     </form>
 
 
-    <script src="scripts/jquery-3.2.1.min.js"></script>
-    <script src="scripts/signup.js"></script>
+    <!-- <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/signup.js"></script>-->
 
 </body>
 </html>

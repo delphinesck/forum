@@ -7,7 +7,7 @@ function getPage(){
     else {
         $page = 'login';
     }
-return $page;
+    return $page;
 }
 
 function getUsername(){
@@ -22,4 +22,22 @@ function getFeedback(){
     return $control;
 }
 
+function getBaseDeDonnees(){
+    $connexion = new PDO('mysql:host=localhost;dbname=TP_forumPHP;charset=UTF8','root','root');
+    $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $connexion->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+    return $connexion;
+}
+
+function inscription($pseudo, $email, $password){
+    $connexion = getBaseDeDonnees();
+    $pdo = $connexion->prepare('INSERT INTO user SET username=:pseudo, email=:email, upassword=:password');
+    $pdo->execute(array(
+        'username'=> $pseudo,
+        'email' => $email,
+        'upassword'=> $password
+    ));
+    $result = $pdo->rowCount();
+    return $result;
+}
 ?>
