@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 include_once("model/fonctions.php");
 $page = getPage();
@@ -34,15 +35,16 @@ $page = getPage();
         case 'createtopic':
 			include('view/createtopic.php');
 			break;
-        case 'post':
-			include('view/post.php');
+		case 'topicdisplay':
+			include('view/topicdisplay.php');
+			break;
+        case 'replytopic':
+			include('view/replytopic.php');
 			break;
 		case 'profile':
-			$username = getUsername();
 			include_once('view/profile.php');
 			break;
         case 'messages':
-			$username = getUsername();
 			include_once('view/messages.php');
 			break;
 	}

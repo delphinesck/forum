@@ -11,7 +11,9 @@
 </head>
 <body>
 
-    <?php include 'header.php'; ?>
+    <?php include 'header.php'; 
+    $pseudo = $_SESSION['user'][0]["username"];
+    ?>
 
     <main>
         <form class="form-horizontal">
@@ -28,19 +30,19 @@
             <div class="form-group">
                 <label class="col-sm-4 control-label">Pseudo</label>
                 <div class="col-sm-6">
-                    <p class="form-control-static">pseudonyme</p>
+                    <p class="form-control-static"><?php echo getUsername(); ?></p>
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-sm-4 control-label">Email</label>
                 <div class="col-sm-6">
-                    <p class="form-control-static">email@example.com</p>
+                    <p class="form-control-static"><?php echo getEmail(); ?></p>
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-sm-4 control-label">Date d'inscription</label>
                 <div class="col-sm-6">
-                    <p class="form-control-static">01/01/17</p>
+                    <p class="form-control-static"><?php echo getDateCreate(); ?></p>
                 </div>
             </div>
             <div class="form-group">

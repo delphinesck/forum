@@ -14,20 +14,20 @@
     <?php include 'header.php'; ?>
 
     <main>
-        <form>
+        <form method="post" action="services/createtopicServices.php">
             <h2>Créer un nouveau topic</h2>
 
             <div class="form-group">
                 <label for="exampleInputEmail1">Titre</label>
-                <input type="text" class="form-control" id="exampleInputName2" placeholder="Titre de votre topic">
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Titre de votre topic" name="title">
             </div>
             <div class="form-group">
                 <label for="exampleInputFile">Ajouter une photo</label>
-                <input type="file" id="exampleInputFile">
+                <input type="file" id="exampleInputFile" name="image">
             </div>
             <div class="form-group">
                 <label for="exampleInputFile">Texte</label>
-                <textarea class="form-control" rows="8" placeholder="Tapez votre texte ici..."></textarea>
+                <textarea class="form-control" rows="8" placeholder="Tapez votre texte ici..." name="content"></textarea>
             </div>
             <button type="submit" class="btn btn-default">Poster</button>
         </form>

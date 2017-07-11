@@ -1,0 +1,19 @@
+.box-topic {
+    background-color: lightgrey;
+}
+
+.profile-topic {
+    border-top: 1px solid darkgrey;
+}
+
+.content-topic {
+    border-top: 1px solid darkgrey;
+    border-left: 1px solid darkgrey;
+    text-align: justify;
+    padding: 20px;
+}
+
+.time-topic {
+    border-top: 1px solid darkgrey;
+    text-align: right;
+}

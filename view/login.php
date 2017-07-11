@@ -11,7 +11,6 @@
 <body>
 
     <div id="banniere"><h1>Bienvenue !<h1></div>
-    <!-- Alfonso: il te faut la lisgne suivante -->
     <form method="post" action="services/loginServices.php">
         <h3>Se connecter</h3>
 
@@ -30,8 +29,8 @@
     </form>
 
 
-    <script src="scripts/jquery-3.2.1.min.js"></script>
-    <script src="scripts/login.js"></script>
+    <!--<script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/login.js"></script>-->
 
 </body>
 </html>

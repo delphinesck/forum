@@ -23,7 +23,11 @@
                             <li><a href="index.php?page=profile">Profil</a></li>
                             <li><a href="index.php?page=messages">Messages privés</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#">Se déconnecter</a></li>
+                            <li>
+                                <form action="services/disconnectServices.php" method="post">
+                                    <input type="submit" value="Se déconnecter" />
+                                </form>
+                            </li>
                         </ul>
                     </li>
                 </ul>

@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 include "../model/fonctions.php";
 $pseudo = $_POST['pseudo'];
@@ -13,12 +14,7 @@ $password = $_POST['password'];
  * et mot de passe et preg_match() pour vérifier le format d'un email
  * */
 
-
-
 $result = inscription($pseudo, $email, $password);
-
-if($result == 1){
-    header("location: ../index.php?page=login&inscription=success");
-}
+$_SESSION['user'] = $result;
 
 ?>
