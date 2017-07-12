@@ -19,22 +19,17 @@
             <div id="username"><label>Pseudo </label><input type="text" class="form-control" name="pseudo" /></div><br />
             <div id="email"><label>E-mail </label><input type="text" class="form-control" name="email" /></div><br />
             <div id="password"><label>Mot de passe </label><input type="password" class="form-control" name="password" /></div><br />
-            <div id="verifypassword"><label>Vérifier le mot de passe </label><input type="password" class="form-control" name="verifypassword" /></div><br /><br />
+            <div id="verifypassword"><label>Vérifier le mot de passe </label><input type="password" class="form-control" name="verifypassword" /></div>
+            
+            <?php
+            print_r($_SESSION['signuperror']);
+            ?><br /><br />
 
             <input type="submit" class="btn btn-primary btn-sm" name="submit" value="S'inscrire" />
 
             <button id="signup" class="btn btn-default btn-sm"><a href="index.php?page=login">Se connecter</a></button>
         </div>
-
-        <p id="p0"></p>
-        <p id="p1"></p>
-        <p id="p2"></p>
-        <p id="p3"></p>
     </form>
-
-
-    <!-- <script src="scripts/jquery-3.2.1.min.js"></script>
-    <script src="scripts/signup.js"></script>-->
 
 </body>
 </html>

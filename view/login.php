@@ -16,6 +16,11 @@
 
         <div class="form-group">
             <div id="username"><label>Pseudo </label><input type="text" class="form-control" name="pseudo" /></div><br />
+            <?php 
+            if(empty($user) == true){
+                echo $_SESSION['loginerror'];
+                echo "<br /><br />";
+            } ?>
             <div id="password"><label>Mot de passe </label><input type="password" class="form-control" name="password" /></div>
             <div class="checkbox"><label><input type="checkbox" name="forgotten" />Mot de passe oublié ?</label></div><br />
 
@@ -23,14 +28,7 @@
 
             <button id="signup" class="btn btn-default btn-sm"><a href="index.php?page=signup">S'inscrire</a></button>
         </div>
-
-        <p id="p0"></p>
-        <p id="p1"></p>
     </form>
-
-
-    <!--<script src="scripts/jquery-3.2.1.min.js"></script>
-    <script src="scripts/login.js"></script>-->
 
 </body>
 </html>

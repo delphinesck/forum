@@ -146,4 +146,15 @@ function getCommentById($id){
     return $comment;
 }
 
+function checkUserLogin($password, $pseudo){
+    $connexion = getConnexion();
+    $object = $connexion->prepare('SELECT username, id FROM user WHERE username=:pseudo AND upassword=:password');
+    $object->execute(array(
+        'pseudo' => $pseudo,
+        'password' => $password
+    ));
+    $passwordverify = $object->fetchAll(PDO::FETCH_ASSOC);
+    return $passwordverify;
+}
+
 ?>
