@@ -1,8 +1,0 @@
-
-/*
-* Alfonso: Bien vu pour la création des tables. Il faut
-* néanmoins lier les tables posts et messages avec les utilisateurs
-* on les lie en incluant un userId INT(255) dans la table post
-* et la table message.
-* Comme ça on sait qui est le propriétaire du post et du message
-*/

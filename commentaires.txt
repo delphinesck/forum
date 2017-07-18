@@ -1,0 +1,15 @@
+
+/*
+* Alfonso: Bien vu pour la création des tables. Il faut
+* néanmoins lier les tables posts et messages avec les utilisateurs
+* on les lie en incluant un userId INT(255) dans la table post
+* et la table message.
+* Comme ça on sait qui est le propriétaire du post et du message
+*
+* Alfonso UPDATE:
+* Tu as vu ce qu'étais le modèle MVC mais tu dois encore travailler dessus pour assimiler la logique
+* Travail également sur les requêtes SQL qui sont importantes et qui reviendront fatalement
+*
+* Ce qui ne m'a pas empêché d'être étonné à certains moment. Donc continue accroche toi et n'ai pas peur de me
+* demander quand ça ne va pas. Lève la main.. je pense que t'aurais pas de crampe si tu fais ça.
+*/
